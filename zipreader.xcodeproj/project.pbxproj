@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E45311D51D32E6A80047DDFB /* NKZipReaderiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E45311D41D32E6A80047DDFB /* NKZipReaderiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E45311DA1D32E6DC0047DDFB /* NKZipReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB81D32B08600CC89A7 /* NKZipReader.swift */; };
+		E45311DB1D32E6DC0047DDFB /* NKArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDC21D32C16A00CC89A7 /* NKArchive.swift */; };
+		E45311DC1D32E6DC0047DDFB /* NKZBytesReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB41D32B08600CC89A7 /* NKZBytesReader.swift */; };
+		E45311DD1D32E6DC0047DDFB /* NKZCentralDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB51D32B08600CC89A7 /* NKZCentralDirectory.swift */; };
+		E45311DE1D32E6DC0047DDFB /* NKZEndRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB61D32B08600CC89A7 /* NKZEndRecord.swift */; };
+		E45311DF1D32E6DC0047DDFB /* NKZUncompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB21D32AF8300CC89A7 /* NKZUncompressor.swift */; };
+		E45311E01D32E6E80047DDFB /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E45311C51D32E4860047DDFB /* libcompression.tbd */; };
+		E45311E91D32E73A0047DDFB /* NKZipReaderOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = E45311E81D32E73A0047DDFB /* NKZipReaderOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E45311EE1D32E7450047DDFB /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E49CBDBF1D32B5D600CC89A7 /* libcompression.tbd */; };
+		E45311FA1D32E78E0047DDFB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453118F1D32E2F90047DDFB /* main.swift */; };
+		E45311FB1D32E79F0047DDFB /* NKZipReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB81D32B08600CC89A7 /* NKZipReader.swift */; };
+		E45311FC1D32E79F0047DDFB /* NKArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDC21D32C16A00CC89A7 /* NKArchive.swift */; };
+		E45311FD1D32E79F0047DDFB /* NKZBytesReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB41D32B08600CC89A7 /* NKZBytesReader.swift */; };
+		E45311FE1D32E79F0047DDFB /* NKZCentralDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB51D32B08600CC89A7 /* NKZCentralDirectory.swift */; };
+		E45311FF1D32E79F0047DDFB /* NKZEndRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB61D32B08600CC89A7 /* NKZEndRecord.swift */; };
+		E45312001D32E79F0047DDFB /* NKZUncompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB21D32AF8300CC89A7 /* NKZUncompressor.swift */; };
+		E45312011D32E7A20047DDFB /* NKZipReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB81D32B08600CC89A7 /* NKZipReader.swift */; };
+		E45312021D32E7A20047DDFB /* NKArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDC21D32C16A00CC89A7 /* NKArchive.swift */; };
+		E45312031D32E7A20047DDFB /* NKZBytesReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB41D32B08600CC89A7 /* NKZBytesReader.swift */; };
+		E45312041D32E7A20047DDFB /* NKZCentralDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB51D32B08600CC89A7 /* NKZCentralDirectory.swift */; };
+		E45312051D32E7A20047DDFB /* NKZEndRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB61D32B08600CC89A7 /* NKZEndRecord.swift */; };
+		E45312061D32E7A20047DDFB /* NKZUncompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CBDB21D32AF8300CC89A7 /* NKZUncompressor.swift */; };
+		E45312071D32E7B70047DDFB /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E49CBDBF1D32B5D600CC89A7 /* libcompression.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E45311F11D32E7820047DDFB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E453118F1D32E2F90047DDFB /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../test/main.swift; sourceTree = "<group>"; };
+		E45311C51D32E4860047DDFB /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libcompression.tbd; sourceTree = DEVELOPER_DIR; };
+		E45311D21D32E6A80047DDFB /* NKZipReaderiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKZipReaderiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45311D41D32E6A80047DDFB /* NKZipReaderiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKZipReaderiOS.h; sourceTree = "<group>"; };
+		E45311D61D32E6A80047DDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45311E61D32E73A0047DDFB /* NKZipReaderOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKZipReaderOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45311E81D32E73A0047DDFB /* NKZipReaderOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKZipReaderOSX.h; sourceTree = "<group>"; };
+		E45311EA1D32E73A0047DDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E45311F31D32E7820047DDFB /* NKZipReaderOSX-TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NKZipReaderOSX-TEST"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45312081D32EB630047DDFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E45312091D32EB630047DDFB /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		E453120A1D32EB630047DDFB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E49CBDB21D32AF8300CC89A7 /* NKZUncompressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKZUncompressor.swift; sourceTree = "<group>"; };
+		E49CBDB41D32B08600CC89A7 /* NKZBytesReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKZBytesReader.swift; sourceTree = "<group>"; };
+		E49CBDB51D32B08600CC89A7 /* NKZCentralDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKZCentralDirectory.swift; sourceTree = "<group>"; };
+		E49CBDB61D32B08600CC89A7 /* NKZEndRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKZEndRecord.swift; sourceTree = "<group>"; };
+		E49CBDB81D32B08600CC89A7 /* NKZipReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKZipReader.swift; sourceTree = "<group>"; };
+		E49CBDBF1D32B5D600CC89A7 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		E49CBDC21D32C16A00CC89A7 /* NKArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKArchive.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E45311CE1D32E6A80047DDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45311E01D32E6E80047DDFB /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45311E21D32E73A0047DDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45311EE1D32E7450047DDFB /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45311F01D32E7820047DDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45312071D32E7B70047DDFB /* libcompression.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E453118E1D32E2B10047DDFB /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		E45311D31D32E6A80047DDFB /* NKZipReaderiOS */ = {
+			isa = PBXGroup;
+			children = (
+				E45311D41D32E6A80047DDFB /* NKZipReaderiOS.h */,
+				E45311D61D32E6A80047DDFB /* Info.plist */,
+			);
+			path = NKZipReaderiOS;
+			sourceTree = "<group>";
+		};
+		E45311E71D32E73A0047DDFB /* NKZipReaderOSX */ = {
+			isa = PBXGroup;
+			children = (
+				E45311E81D32E73A0047DDFB /* NKZipReaderOSX.h */,
+				E45311EA1D32E73A0047DDFB /* Info.plist */,
+			);
+			path = NKZipReaderOSX;
+			sourceTree = "<group>";
+		};
+		E45311F41D32E7820047DDFB /* NKZipReaderOSX-TEST */ = {
+			isa = PBXGroup;
+			children = (
+				E453118F1D32E2F90047DDFB /* main.swift */,
+			);
+			path = "NKZipReaderOSX-TEST";
+			sourceTree = "<group>";
+		};
+		E49CBD9F1D32AF6500CC89A7 = {
+			isa = PBXGroup;
+			children = (
+				E45312081D32EB630047DDFB /* README.md */,
+				E45312091D32EB630047DDFB /* NOTICE */,
+				E453120A1D32EB630047DDFB /* LICENSE */,
+				E45311C51D32E4860047DDFB /* libcompression.tbd */,
+				E453118E1D32E2B10047DDFB /* test */,
+				E49CBDAA1D32AF6500CC89A7 /* zipreader */,
+				E49CBDC11D32BA0000CC89A7 /* OSX Support files */,
+				E45311D31D32E6A80047DDFB /* NKZipReaderiOS */,
+				E45311E71D32E73A0047DDFB /* NKZipReaderOSX */,
+				E45311F41D32E7820047DDFB /* NKZipReaderOSX-TEST */,
+				E49CBDA91D32AF6500CC89A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E49CBDA91D32AF6500CC89A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E45311D21D32E6A80047DDFB /* NKZipReaderiOS.framework */,
+				E45311E61D32E73A0047DDFB /* NKZipReaderOSX.framework */,
+				E45311F31D32E7820047DDFB /* NKZipReaderOSX-TEST */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E49CBDAA1D32AF6500CC89A7 /* zipreader */ = {
+			isa = PBXGroup;
+			children = (
+				E49CBDB81D32B08600CC89A7 /* NKZipReader.swift */,
+				E49CBDC21D32C16A00CC89A7 /* NKArchive.swift */,
+				E49CBDB41D32B08600CC89A7 /* NKZBytesReader.swift */,
+				E49CBDB51D32B08600CC89A7 /* NKZCentralDirectory.swift */,
+				E49CBDB61D32B08600CC89A7 /* NKZEndRecord.swift */,
+				E49CBDB21D32AF8300CC89A7 /* NKZUncompressor.swift */,
+			);
+			path = zipreader;
+			sourceTree = "<group>";
+		};
+		E49CBDC11D32BA0000CC89A7 /* OSX Support files */ = {
+			isa = PBXGroup;
+			children = (
+				E49CBDBF1D32B5D600CC89A7 /* libcompression.tbd */,
+			);
+			name = "OSX Support files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E45311CF1D32E6A80047DDFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45311D51D32E6A80047DDFB /* NKZipReaderiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45311E31D32E73A0047DDFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45311E91D32E73A0047DDFB /* NKZipReaderOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E45311D11D32E6A80047DDFB /* NKZipReaderiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45311D71D32E6A80047DDFB /* Build configuration list for PBXNativeTarget "NKZipReaderiOS" */;
+			buildPhases = (
+				E45311CD1D32E6A80047DDFB /* Sources */,
+				E45311CE1D32E6A80047DDFB /* Frameworks */,
+				E45311CF1D32E6A80047DDFB /* Headers */,
+				E45311D01D32E6A80047DDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKZipReaderiOS;
+			productName = NKZipReaderiOS;
+			productReference = E45311D21D32E6A80047DDFB /* NKZipReaderiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E45311E51D32E73A0047DDFB /* NKZipReaderOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45311EB1D32E73A0047DDFB /* Build configuration list for PBXNativeTarget "NKZipReaderOSX" */;
+			buildPhases = (
+				E45311E11D32E73A0047DDFB /* Sources */,
+				E45311E21D32E73A0047DDFB /* Frameworks */,
+				E45311E31D32E73A0047DDFB /* Headers */,
+				E45311E41D32E73A0047DDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKZipReaderOSX;
+			productName = NKZipReaderOSX;
+			productReference = E45311E61D32E73A0047DDFB /* NKZipReaderOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E45311F21D32E7820047DDFB /* NKZipReaderOSX-TEST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45311F71D32E7820047DDFB /* Build configuration list for PBXNativeTarget "NKZipReaderOSX-TEST" */;
+			buildPhases = (
+				E45311EF1D32E7820047DDFB /* Sources */,
+				E45311F01D32E7820047DDFB /* Frameworks */,
+				E45311F11D32E7820047DDFB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NKZipReaderOSX-TEST";
+			productName = "NKZipReaderOSX-TEST";
+			productReference = E45311F31D32E7820047DDFB /* NKZipReaderOSX-TEST */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E49CBDA01D32AF6500CC89A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Guy Barnard";
+				TargetAttributes = {
+					E45311D11D32E6A80047DDFB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E45311E51D32E73A0047DDFB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E45311F21D32E7820047DDFB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E49CBDA31D32AF6500CC89A7 /* Build configuration list for PBXProject "zipreader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E49CBD9F1D32AF6500CC89A7;
+			productRefGroup = E49CBDA91D32AF6500CC89A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E45311D11D32E6A80047DDFB /* NKZipReaderiOS */,
+				E45311E51D32E73A0047DDFB /* NKZipReaderOSX */,
+				E45311F21D32E7820047DDFB /* NKZipReaderOSX-TEST */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E45311D01D32E6A80047DDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45311E41D32E73A0047DDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E45311CD1D32E6A80047DDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45311DA1D32E6DC0047DDFB /* NKZipReader.swift in Sources */,
+				E45311DE1D32E6DC0047DDFB /* NKZEndRecord.swift in Sources */,
+				E45311DD1D32E6DC0047DDFB /* NKZCentralDirectory.swift in Sources */,
+				E45311DB1D32E6DC0047DDFB /* NKArchive.swift in Sources */,
+				E45311DC1D32E6DC0047DDFB /* NKZBytesReader.swift in Sources */,
+				E45311DF1D32E6DC0047DDFB /* NKZUncompressor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45311E11D32E73A0047DDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45312011D32E7A20047DDFB /* NKZipReader.swift in Sources */,
+				E45312051D32E7A20047DDFB /* NKZEndRecord.swift in Sources */,
+				E45312041D32E7A20047DDFB /* NKZCentralDirectory.swift in Sources */,
+				E45312021D32E7A20047DDFB /* NKArchive.swift in Sources */,
+				E45312031D32E7A20047DDFB /* NKZBytesReader.swift in Sources */,
+				E45312061D32E7A20047DDFB /* NKZUncompressor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45311EF1D32E7820047DDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45311FB1D32E79F0047DDFB /* NKZipReader.swift in Sources */,
+				E45311FC1D32E79F0047DDFB /* NKArchive.swift in Sources */,
+				E45311FA1D32E78E0047DDFB /* main.swift in Sources */,
+				E45312001D32E79F0047DDFB /* NKZUncompressor.swift in Sources */,
+				E45311FF1D32E79F0047DDFB /* NKZEndRecord.swift in Sources */,
+				E45311FD1D32E79F0047DDFB /* NKZBytesReader.swift in Sources */,
+				E45311FE1D32E79F0047DDFB /* NKZCentralDirectory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E45311D81D32E6A80047DDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NKZipReaderiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nodekit.NKZipReaderiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E45311D91D32E6A80047DDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NKZipReaderiOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nodekit.NKZipReaderiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E45311EC1D32E73A0047DDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NKZipReaderOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nodekit.NKZipReaderOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E45311ED1D32E73A0047DDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = NKZipReaderOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.nodekit.NKZipReaderOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E45311F81D32E7820047DDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E45311F91D32E7820047DDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E49CBDAD1D32AF6500CC89A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E49CBDAE1D32AF6500CC89A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E45311D71D32E6A80047DDFB /* Build configuration list for PBXNativeTarget "NKZipReaderiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45311D81D32E6A80047DDFB /* Debug */,
+				E45311D91D32E6A80047DDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45311EB1D32E73A0047DDFB /* Build configuration list for PBXNativeTarget "NKZipReaderOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45311EC1D32E73A0047DDFB /* Debug */,
+				E45311ED1D32E73A0047DDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45311F71D32E7820047DDFB /* Build configuration list for PBXNativeTarget "NKZipReaderOSX-TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45311F81D32E7820047DDFB /* Debug */,
+				E45311F91D32E7820047DDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E49CBDA31D32AF6500CC89A7 /* Build configuration list for PBXProject "zipreader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49CBDAD1D32AF6500CC89A7 /* Debug */,
+				E49CBDAE1D32AF6500CC89A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E49CBDA01D32AF6500CC89A7 /* Project object */;
+}
